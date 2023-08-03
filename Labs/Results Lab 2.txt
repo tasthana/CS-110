@@ -1,0 +1,2 @@
+mean = 0.000
+standard deviation = 0.000

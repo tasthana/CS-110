@@ -1,0 +1,64 @@
+
+
+public class HourlyEmployee extends Employee
+{
+    //declare varibles 
+    private double wageRate;
+    private double hours; 
+    
+    public HourlyEmployee(String firstName, String lastName, Date theDate,
+                       double theWageRate, double theHours)
+    {
+         super(theName, theDate);
+         if ((theWageRate >= 0) && (theHours >= 0))
+         {
+             wageRate = theWageRate;
+             hours = theHours;
+         }
+         else
+         {
+             System.out.println("Error: Something is wrong with employee wage/hour.");
+         }
+    }
+    
+    //getter for getRate 
+    public double getRate()
+    {
+        return wageRate;
+    }
+    public double getHours()
+    {
+        return hours;
+    }
+   
+    //setter
+    public void setNum(double wage, double hrs)
+    {
+     wageRate = wage;
+     hours = hrs; 
+    } 
+    
+     //toString
+    @Override
+    public String toString()
+    {
+      return (fName + " " + lName+ " " + date); 
+    }
+
+    //override annottation + equals method 
+    @Override
+    public boolean equals(Object other)
+    {
+      super.(equals(eOther);
+      HourlyEmployee otherEmployee = (HourlyEmployee) other;
+      if (otherEmployee == null)
+            return false;
+      else
+    {
+   
+      return (firstname.equals(otherEmployee.firstname)
+   
+    }
+   }
+ }
+  

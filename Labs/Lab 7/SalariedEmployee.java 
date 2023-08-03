@@ -1,0 +1,55 @@
+
+
+
+public class SalariedEmployee extends Employee
+{
+   double salary; 
+   
+   public SalariedEmployee(String firstName, String lastName, hireDate,double salary)
+   {
+    // getters
+    public String getName()
+    {
+     return firstName + " " + lastName;
+    }
+    public Date getHireDate( )
+    {
+      return new Date(hireDate.getTime());
+    }
+    
+    //setters
+    public setSalary()
+    {
+      salary = total;
+    } 
+    
+    @Override
+    public String toString()
+    {
+      return (fName + " " + lName+ " " + date); 
+    }
+    
+    // objects are equals if all fields are the same
+    @Override
+    public boolean equals(Object other)
+    {
+      
+      Employee otherEmployee = (Employee) other;
+      // a bit of protection ... if the other object sent in is null // you don't want to attempt to dereference it, the program
+      // will crash
+      if (otherEmployee == null)
+            return false;
+      else
+      {
+      
+      return (firstname.equals(otherEmployee.firstname));
+      
+      } 
+      }
+      
+      
+            
+      
+      
+     }
+      

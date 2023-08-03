@@ -1,0 +1,65 @@
+// An author has instance variables to represent first name, last name and an email address (all strings).
+// The Author class has two constructors; one constructor that takes three strings representing the names and email address 
+// and a copy constructor. Include a toString( ) and equals( ) method for this class.
+
+
+public class Author3 
+
+{  //declare instance variables 
+   private String name;
+   private String email;
+   private String name2; 
+   
+   //first constructor w name and email  
+   public Author(String firstName, String emailListed, String lastName)
+   {
+      name = firstName;
+      email = emailListed;
+      name 2 = lastName;
+   }
+   
+   //getter
+   public String getFirstName()
+   {
+      return name;
+   }
+   
+   //getter
+   public String getEmail()
+   {
+      return email;
+   }
+   
+   //getter
+   public String getLastName()
+   {
+      return name2; 
+   }
+   
+   //toString method
+   public String toString()
+   {
+      String info = name + email + "<"+name2+">";
+      return info; 
+   } 
+   
+   public boolean equals(Author Author2)
+   {
+      if(name.equals(Author2.getFirstName())
+      {
+         if(name2.equals(Author2.getLastName())
+         {
+            return true;
+         }
+         return false;
+      }
+       return false; 
+    } 
+         
+   
+   
+   
+      
+      
+      
+      
